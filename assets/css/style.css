@@ -617,6 +617,8 @@ section {
   overflow: hidden;
   z-index: 1;
   background: rgba(69, 80, 91, 0.8);
+  border-radius: 15px; /* 添加圓角效果 */
+
 }
 
 .portfolio .portfolio-wrap::before {
@@ -727,6 +729,13 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-info::after {
   bottom: 15px;
   right: 15px;
+}
+
+/* 添加圖片框線和圓角效果 */
+.portfolio .portfolio-wrap img {
+  border: 2px solid #000; /* 黑色框線，寬度2px */
+  border-radius: 15px; /* 圓角半徑15px */
+  overflow: hidden; /* 確保內容也遵循邊界圓角 */
 }
 
 /*--------------------------------------------------------------
